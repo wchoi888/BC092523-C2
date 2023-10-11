@@ -1,0 +1,192 @@
+:root {
+  --turquoise: rgb(22, 236, 236);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  padding-bottom: 0;
+}
+
+header h1 {
+  background-color: var(--turquoise);
+  color: black;
+  padding: 4px;
+  display: inline;
+  margin-bottom: 0;
+  width: 137px;
+}
+nav {
+  float: right;
+}
+nav ul li {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding: 3px;
+}
+main {
+  width: 85%;
+  margin: 20px auto;
+}
+#about-me p {
+  line-height: 1.5em;
+  font-size: 1.8em;
+  margin: 0;
+}
+#hero {
+  position: relative;
+  height: 200px;
+  background-image: url(../images/About_Me.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+}
+.photo img {
+  width: 156px;
+  padding-left: 15px;
+  object-fit: contain;
+  object-position: center;
+}
+#subtitle h2 {
+  background-color: var(--turquoise);
+  color: black;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: 0;
+}
+section {
+  display: flex;
+}
+section h2 {
+  padding: 30px;
+  margin: 15px;
+  flex: 1 20%;
+  border-right: 5px solid black;
+  text-align: right;
+  font-size: 4.3em;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex: 1 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 20px;
+}
+
+.application {
+  border: 3px solid blueviolet;
+  position: relative;
+  overflow: hidden;
+}
+
+.application img {
+  width: 100%;
+  height: 100%;
+}
+.application img:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.application-1 {
+  flex-grow: 2;
+  width: 100%;
+  height: 60vh;
+}
+
+.application-2,
+.application-3,
+.application-4,
+.application-5 {
+  flex-grow: 1;
+  width: 45%;
+  height: 200px;
+}
+.application-title {
+  position: absolute;
+  background-color: var(--turquoise);
+  left: 0px;
+  bottom: 20px;
+}
+
+#contact-me li {
+  display: inline-block;
+  border-bottom: 5px solid blue;
+  margin: 0 25px;
+}
+#contact-me li a {
+  text-decoration: none;
+  color: blue;
+  font-size: 2em;
+}
+.application-title h3,
+.application-title p {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section h2,
+  .container {
+    flex: 1 100%;
+    border: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header h1 {
+    display: block;
+    font-size: 1em;
+    text-align: center;
+  }
+  nav {
+    float: none;
+  }
+  nav a {
+    font-size: 15px;
+  }
+  section h2 {
+    font-size: 2em;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero .photo {
+    flex: 1 100%;
+    display: block;
+  }
+  #hero img {
+    width: 100px;
+  }
+  #subtitle h2 {
+    position: relative;
+    font-size: 1em;
+    right: 0;
+  }
+}
