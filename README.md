@@ -23,6 +23,7 @@ Please refer to the LICENSE in the repo.
 
 1. The only sample applications that can be showcased at this point are the CSS/HTML applications: Study Guide and Marketing Brochure. The other applications that require other technologies like JavaScript and React ARE NOT YET covered in Bootcamp and I used image files as placeholder for the portfolio in the meantime.
 2. I am not an active Twitter/X user. The Twitter link will only bring up a generic Twitter/X page.
+3. Not all unit of measurement is standardized in px or em. There were quite a bit of trial-and-error in trying to get the images to line up properly and spacing to be correct.
 
 ## Screen Shot
 

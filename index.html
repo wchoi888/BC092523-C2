@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Added title to the webpage -->
     <title>Portfolio of Work</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
+      <!-- adding heading and navigation bar to the page header -->
       <h1>Wing Choi</h1>
-      
       <nav>
         <ul>
           <li><a href="#about-me">About me</a></li>
@@ -19,11 +20,13 @@
         </ul>
       </nav>
     </header>
-         <div id="hero">
-          <div class="photo"><img src="assets/images/LinkedIn-Photo.bmp" /></div>
-         <div id="subtitle"><h2>Full Stack Developer</h2></div>
-      </div>
-      <main>
+    <!-- adding photo and subtitle to the hero section -->
+    <div id="hero">
+      <div class="photo"><img src="assets/images/LinkedIn-Photo.bmp" /></div>
+      <div id="subtitle"><h2>Full Stack Developer</h2></div>
+    </div>
+    <main>
+    <!-- adding "about me" section and flex container for the content-->
       <section id="about-me">
         <h2>About Me</h2>
         <div class="container">
@@ -41,71 +44,64 @@
           </p>
         </div>
       </section>
+    <!-- adding "work" section, sample projects, and flex container for the applications.  The applications have title and images.-->
       <section id="work">
         <h2>Work</h2>
         <div class="container">
           <div class="application-1 application">
-            <img src="./assets/images/calculator.jpg" />
+            <img src="./assets/images/calculator.jpg" alt="Calculator"/>
             <div class="application-title">
-            <h3>calculator</h3>
+              <h3>calculator</h3>
               <p>React/JavaScript/CSS</p>
             </div>
-            
           </div>
           <div class="application-2 application">
             <a href="https://wchoi888.github.io/BC092523-C1/">
-            <img src="./assets/images/Marketing_Brochure.jfif" /></a>
+            <img src="./assets/images/Marketing_Brochure.jfif" alt="Marketing Brochure" /></a>
             <div class="application-title">
               <h3>Marketing Brochure</h3>
               <p>HTML/CSS</p>
             </div>
-            
           </div>
           <div class="application-3 application">
-            <img src="./assets/images/Puzzle.jfif" />
+            <img src="./assets/images/Puzzle.jfif" alt="Pastel Puzzle" />
             <div class="application-title">
               <h3>Pastel Puzzle</h3>
               <p>React/JavaScript/CSS</p>
             </div>
-            
           </div>
           <div class="application-4 application">
             <a href="https://wchoi888.github.io/prework-study-guide/">
-            <img src="./assets/images/StudyGuide.jfif" /> </a>
+              <img src="./assets/images/StudyGuide.jfif" alt="Study Guide"/>
+            </a>
             <div class="application-title">
               <h3>Study Guide</h3>
               <p>HTML/CSS</p>
             </div>
-            
           </div>
           <div class="application-5 application">
-            <img src="./assets/images/Surf.jfif" />
+            <img src="./assets/images/Surf.jfif" alt="Surf" />
             <div class="application-title">
               <h3>Surf</h3>
               <p>React/JavaScript/CSS</p>
             </div>
-            
-
-            </div>
           </div>
         </div>
       </section>
+    <!-- Adding "contact me" section with contact information and social media handles.  This includes flex container for all contact information-->
       <section id="contact-me">
         <h2>Contact Me</h2>
         <div class="container">
           <ul>
-            <li>
-              <a href="tel:6462654941">646-265-4941</a></li>
-    
+            <li><a href="tel:6462654941">646-265-4941</a></li>
             <li><a href="mailto:wchoi888@live.com">wchoi888@live.com</a></li>
-            <li>
-              <a href="https://github.com/wchoi888">GitHub</a>
-            </li>
+            <li><a href="https://github.com/wchoi888">GitHub</a></li>
             <li><a href="https://linkedin.com/in/winglchoi">Linkedin</a></li>
             <li><a href=https://twitter.com/Ironmanx1688">Twitter</a></li>
           </ul>
         </div>
       </section>
     </main>
+    <footer><p>Copyright 2023 Wing Choi</p></footer>
   </body>
 </html>
