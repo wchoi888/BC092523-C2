@@ -1,17 +1,21 @@
+/* standardizing colors by using variables */
 :root {
   --turquoise: rgb(22, 236, 236);
+  --white: white;
+  --black: black;
+  --blue: blue;
 }
 /* targetting header and header h1 for background-color and other essential spacing */
 header {
   padding: 15px;
   background-color: black;
-  color: white;
+  color: var(--white);
   padding-bottom: 0;
 }
 
 header h1 {
   background-color: var(--turquoise);
-  color: black;
+  color: var(--black);
   padding: 4px;
   display: inline;
   margin-bottom: 0;
@@ -31,10 +35,10 @@ nav ul li {
   padding: 10px;
 }
 nav ul li a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-size: 24px;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid var(--white);
   padding: 3px;
 }
 /* targetting main to set width and proper margin for centering content */
@@ -42,7 +46,7 @@ main {
   width: 85%;
   margin: 20px auto;
 }
-/* targetting hero section to set background image, background color for the subtitle, positioning image, photo, and other essential spacing */
+/* targetting hero section to set background image, background color for the subtitle, positioning photo, and other essential spacing */
 #hero {
   position: relative;
   height: 200px;
@@ -59,7 +63,7 @@ main {
 }
 #subtitle h2 {
   background-color: var(--turquoise);
-  color: black;
+  color: var(--black);
   padding: 10px;
   position: absolute;
   bottom: 10px;
@@ -74,7 +78,7 @@ section h2 {
   padding: 30px;
   margin: 15px;
   flex: 1 20%;
-  border-right: 5px solid black;
+  border-right: 5px solid var(--black);
   text-align: right;
   font-size: 4.3em;
 }
@@ -93,7 +97,7 @@ section h2 {
   row-gap: 10px;
   padding: 20px;
 }
-/* targetting applications for the proper layout with application 1 with being bigger than the other applications, cursor pointer is set when hovering over the images, application titles are in fixed position, and essential spacing between applications */
+/* targetting applications for the proper layout with application 1 being bigger than the other applications, cursor pointer is set when hovering over the images, application titles are in fixed position, and essential spacing between applications */
 .application {
   border: 3px solid var(--turquoise);
   position: relative;
@@ -136,23 +140,24 @@ section h2 {
 /* targetting contact-me to change color and bottom border for the contact links and essential spacing. */
 #contact-me li {
   display: inline-block;
-  border-bottom: 5px solid blue;
+  border-bottom: 5px solid var(--blue);
   margin: 0 25px;
 }
 #contact-me li a {
   text-decoration: none;
-  color: blue;
+  color: var(--blue);
   font-size: 2em;
 }
 /* targetting footer with background color and centering text */
 footer {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   text-align: center;
   font-size: 1.8em;
   padding: 5px;
   margin: 0;
 }
+/* Set up media queries for screen sizes of 768px or less to center section title and changed flex-direction from row to column for the sections to stack. */
 @media screen and (max-width: 768px) {
   section {
     display: flex;
@@ -166,6 +171,7 @@ footer {
     border: none;
   }
 }
+/* set up media queries for screen sizes of 640px or less for the navigation bar and header to be centered. Header was made to be flexbox with flex-direction column for the sections to stack.  Hero section was made to be a flexbox so it center the image and subtitle.  The font size was reduced.  Essential spacing is also added.*/
 @media screen and (max-width: 640px) {
   header {
     display: flex;

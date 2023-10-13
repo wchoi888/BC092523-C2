@@ -25,7 +25,7 @@ Please refer to the LICENSE in the repo.
 2. I am not an active Twitter/X user. The Twitter link will only bring up a generic Twitter/X page.
 3. Not all unit of measurement is standardized in px or em. There were quite a bit of trial-and-error in trying to get the images to line up properly and spacing to be correct.
 
-## Screen Shot
+## Screenshot
 
 ![Portfolio of Work for Prospective Employers](image.png)
 ![Portfolio of Work for Prospective Employers Part II](image-1.png)
